@@ -1,7 +1,7 @@
 <div class="main-menu">
     <nav class="main-nav">
         <div class="mobile-menu-logo">
-            <a href="index.html"><img src="assets/images/logo.svg" alt=""></a>
+            <a href="index.php"><img src="assets/images/logo.svg" alt=""></a>
             <div class="remove">
                 <i class="bi bi-plus-lg"></i>
             </div>
@@ -23,7 +23,7 @@
             <li><a href="contact.php">Contact Us</a></li>
         </ul>
         <div class="my-account">
-            <a href="account.html">My Account</a>
+            <a href="account.php">My Account</a>
         </div>
     </nav>
 </div>

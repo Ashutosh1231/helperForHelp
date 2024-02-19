@@ -1,6 +1,6 @@
     <header class="header-2 sticky_top">
         <div class="header-logo">
-            <a href="index.html"><img src="assets/images/home2/logo.svg" alt=""></a>
+            <a href="index.php"><img src="assets/images/home2/logo.svg" alt=""></a>
         </div>
         <?php
             include_once('assets/scripts/menu.php');
@@ -16,10 +16,10 @@
                 </div>
             </div>
             <div class="wishlist">
-                <a href="account.html"><i class="bi bi-suit-heart"></i></a>
+                <a href="account.php"><i class="bi bi-suit-heart"></i></a>
             </div>
             <div class="account-btn">
-                <a href="account.html">My Account</a>
+                <a href="account.php">My Account</a>
             </div>
             <div class="mobile-menu">
                 <a href="javascript:void(0)" class="cross-btn">

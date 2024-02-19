@@ -6,11 +6,11 @@
                     <div class="col-md-6 col-lg-5">
                         <div class="footer-widget with-logo">
                             <div class="footer-logo">
-                                <a href="index.html"><img src="assets/images/footer-logo.svg" alt=""></a>
+                                <a href="index.php"><img src="assets/images/footer-logo.svg" alt=""></a>
                             </div>
                             <p>Aenean fermentum sapien acena gravida. Fusce a ipsum metuslai. Suspendisse oi potenti.</p>
                             <div class="request-btn">
-                                <a href="contact.html">Request a Service</a>
+                                <a href="contact.php">Request a Service</a>
                             </div>
                         </div>
                     </div>
@@ -18,10 +18,10 @@
                         <div class="footer-widget">
                             <h4>Explore On</h4>
                             <ul class="footer-menu">
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="blog.html">Blog Grid</a></li>
+                                <li><a href="index.php">Home</a></li>
+                                <li><a href="blog.php">Blog Grid</a></li>
                                 <li><a href="#">Help & Support</a></li>
-                                <li><a href="service-details.html">Services Details</a></li>
+                                <li><a href="service-details.php">Services Details</a></li>
                                 <li><a href="#">Privacy Policy</a></li>
                                 <li><a href="#">Terms of use</a></li>
                             </ul>
@@ -31,11 +31,11 @@
                         <div class="footer-widget">
                             <h4>Categories</h4>
                             <ul class="footer-menu">
-                                <li><a href="service.html">Electronics</a></li>
-                                <li><a href="service.html">Driver Service</a></li>
-                                <li><a href="service.html">Electric & Plumbing</a></li>
-                                <li><a href="service.html">Gadgets Repair</a></li>
-                                <li><a href="service.html">Security Service</a></li>
+                                <li><a href="service.php">Electronics</a></li>
+                                <li><a href="service.php">Driver Service</a></li>
+                                <li><a href="service.php">Electric & Plumbing</a></li>
+                                <li><a href="service.php">Gadgets Repair</a></li>
+                                <li><a href="service.php">Security Service</a></li>
                             </ul>
                         </div>
                     </div>

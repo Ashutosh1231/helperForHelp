@@ -29,7 +29,7 @@
                 <div class="col-12">
                     <div class="breadcrumb-wrapper">
                         <h2>Contact Us</h2>
-                        <span><a href="index.html">Home</a><i class="bi bi-chevron-right"></i>Contact Us</span>
+                        <span><a href="index.php">Home</a><i class="bi bi-chevron-right"></i>Contact Us</span>
                         <div class="arrow-down">
                             <a href="#down"><i class="bi bi-chevron-down"></i></a>
                         </div>

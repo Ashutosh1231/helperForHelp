@@ -33,7 +33,7 @@
                 <div class="col-12">
                     <div class="breadcrumb-wrapper">
                         <h2>About Us</h2>
-                        <span><a href="index.html">Home</a><i class="bi bi-chevron-right"></i>About Us</span>
+                        <span><a href="index.php">Home</a><i class="bi bi-chevron-right"></i>About Us</span>
                         <div class="arrow-down">
                             <a href="#down"><i class="bi bi-chevron-down"></i></a>
                         </div>
@@ -60,7 +60,7 @@
                             <li><i class="bi bi-check-all"></i>Adance Data analysis operation.</li>
                         </ul>
                         <div class="cmn-btn">
-                            <a href="about.html">More About</a>
+                            <a href="about.php">More About</a>
                         </div>
                         <div class="feature-counts">
                             <div class="single-count">

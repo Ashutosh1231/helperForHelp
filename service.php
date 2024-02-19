@@ -29,7 +29,7 @@
                 <div class="col-12">
                     <div class="breadcrumb-wrapper">
                         <h2>Our Services</h2>
-                        <span><a href="index.html">Home</a><i class="bi bi-chevron-right"></i>Our Services</span>
+                        <span><a href="index.php">Home</a><i class="bi bi-chevron-right"></i>Our Services</span>
                         <div class="arrow-down">
                             <a href="#down"><i class="bi bi-chevron-down"></i></a>
                         </div>
@@ -49,10 +49,10 @@
                         <div class="thumb">
                             <a href=""><img src="assets/images/services/service-1.jpg" alt=""></a>
                             <div class="tag">
-                                <a href="service.html">Saloon</a>
+                                <a href="service.php">Saloon</a>
                             </div>
                             <div class="wish">
-                                <a href="account.html"><i class="bi bi-suit-heart"></i></a>
+                                <a href="account.php"><i class="bi bi-suit-heart"></i></a>
                             </div>
                         </div>
                         <div class="single-inner">
@@ -61,7 +61,7 @@
                                     <img src="assets/images/services/service-author-1.png" alt="">
                                 </div>
                             </div>
-                            <h4><a href="service-details.html">Sed elit massa, maximus quisen fermentum auctor.</a></h4>
+                            <h4><a href="service-details.php">Sed elit massa, maximus quisen fermentum auctor.</a></h4>
                             <div class="started">
                                 <a href="service-details.php">View Details<span><i class="bi bi-arrow-right"></i></span></a>
                                 

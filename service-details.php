@@ -28,7 +28,7 @@
                 <div class="col-12">
                     <div class="breadcrumb-wrapper">
                         <h2>Service Details</h2>
-                        <span><a href="index.html">Home</a><i class="bi bi-chevron-right"></i>Service Details</span>
+                        <span><a href="index.php">Home</a><i class="bi bi-chevron-right"></i>Service Details</span>
                         <div class="arrow-down">
                             <a href="#down"><i class="bi bi-chevron-down"></i></a>
                         </div>
@@ -259,7 +259,7 @@
                                     </ul>
                                 </div>
                                 <div class="book-btn">
-                                    <a href="contact.html">Order Now</a>
+                                    <a href="contact.php">Order Now</a>
                                 </div>
                             </div>
                         </div>
@@ -280,9 +280,9 @@
                     <div class="col-md-6 col-lg-4 wow animate fadeInLeft" data-wow-delay="200ms" data-wow-duration="1500ms">
                         <div class="single-service layout-2">
                             <div class="thumb">
-                                <a href="service-details.html"><img src="assets/images/services/service-1.jpg" alt=""></a>
+                                <a href="service-details.php"><img src="assets/images/services/service-1.jpg" alt=""></a>
                                 <div class="tag">
-                                    <a href="service.html">Saloon</a>
+                                    <a href="service.php">Saloon</a>
                                 </div>
                             </div>
                             <div class="single-inner">
@@ -291,9 +291,9 @@
                                         <img src="assets/images/services/service-author-1.png" alt="">
                                     </div>
                                 </div>
-                                <h4><a href="service-details.html">Sed elit massa, maximus quisen fermentum auctor.</a></h4>
+                                <h4><a href="service-details.php">Sed elit massa, maximus quisen fermentum auctor.</a></h4>
                                 <div class="started">
-                                    <a href="service-details.html">View Details<span><i class="bi bi-arrow-right"></i></span></a>
+                                    <a href="service-details.php">View Details<span><i class="bi bi-arrow-right"></i></span></a>
                                     
                                 </div>
                             </div>

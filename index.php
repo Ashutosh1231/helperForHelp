@@ -24,7 +24,7 @@
         
         <header class="header-1 sticky_top">
             <div class="header-logo">
-                <a href="index.html"><img src="assets/images/logo.svg" alt=""></a>
+                <a href="index.php"><img src="assets/images/logo.svg" alt=""></a>
             </div>
             <?php
                 include_once('assets/scripts/menu.php');
@@ -40,10 +40,10 @@
                     </div>
                 </div>
                 <div class="wishlist">
-                    <a href="account.html"><i class="bi bi-suit-heart"></i></a>
+                    <a href="account.php"><i class="bi bi-suit-heart"></i></a>
                 </div>
                 <div class="account-btn">
-                    <a href="account.html">My Account</a>
+                    <a href="account.php">My Account</a>
                 </div>
                 <div class="mobile-menu">
                     <a href="javascript:void(0)" class="cross-btn">
@@ -93,10 +93,10 @@
                         <div class="suggest">
                             <span>Suggest For You:</span>
                             <ul class="suggest-list">
-                                <li><a href="service.html">Beauty & Salon</a></li>
-                                <li><a href="service.html">Shifting</a></li>
-                                <li><a href="service.html">AC Repair</a></li>
-                                <li><a href="service.html">WallPainting</a></li>
+                                <li><a href="service.php">Beauty & Salon</a></li>
+                                <li><a href="service.php">Shifting</a></li>
+                                <li><a href="service.php">AC Repair</a></li>
+                                <li><a href="service.php">WallPainting</a></li>
                             </ul>
                         </div>
                     </div>
@@ -124,7 +124,7 @@
                         </div>
                         <div class="title-right">
                             <strong>Popular Services</strong>
-                            <a href="service.html">View All Services<span><i class="bi bi-arrow-right"></i></span></a>
+                            <a href="service.php">View All Services<span><i class="bi bi-arrow-right"></i></span></a>
                         </div>
                     </div>
                 </div>
@@ -133,9 +133,9 @@
                 <div class="col-md-6 col-lg-4 wow animate fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
                     <div class="single-service">
                         <div class="thumb">
-                            <a href="service-details.html"><img src="assets/images/services/service-1.jpg" alt=""></a>
+                            <a href="service-details.php"><img src="assets/images/services/service-1.jpg" alt=""></a>
                             <div class="tag">
-                                <a href="service.html">Saloon</a>
+                                <a href="service.php">Saloon</a>
                             </div>
                         </div>
                         <div class="single-inner">
@@ -144,10 +144,10 @@
                                     <img src="assets/images/services/service-author-1.png" alt="">
                                 </div>
                             </div>
-                            <h4><a href="service-details.html">Sed elit massa, maximus quisen fermentum auctor.</a></h4>
+                            <h4><a href="service-details.php">Sed elit massa, maximus quisen fermentum auctor.</a></h4>
                             <div class="started">
                                 
-                                <a href="service-details.html">View Details<span><i class="bi bi-arrow-right"></i></span></a>
+                                <a href="service-details.php">View Details<span><i class="bi bi-arrow-right"></i></span></a>
                             </div>
                         </div>
                     </div>
@@ -170,7 +170,7 @@
                         </div>
                         <div class="title-right">
                             <strong>For Your Home</strong>
-                            <a href="service.html">View All Services<span><i class="bi bi-arrow-right"></i></span></a>
+                            <a href="service.php">View All Services<span><i class="bi bi-arrow-right"></i></span></a>
                         </div>
                     </div>
                 </div>
@@ -179,9 +179,9 @@
                 <div class="col-md-6 col-lg-4 wow animate fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
                     <div class="single-service">
                         <div class="thumb">
-                            <a href="service-details.html"><img src="assets/images/services/service-4.jpg" alt=""></a>
+                            <a href="service-details.php"><img src="assets/images/services/service-4.jpg" alt=""></a>
                             <div class="tag">
-                                <a href="service.html">Spa & Beuty</a>
+                                <a href="service.php">Spa & Beuty</a>
                             </div>
                         </div>
                         <div class="single-inner">
@@ -190,9 +190,9 @@
                                     <img src="assets/images/services/service-author-4.png" alt="">
                                 </div>
                             </div>
-                            <h4><a href="service-details.html">Aliquam commodo suscipit vola neque. Aliquam erat utpat.</a></h4>
+                            <h4><a href="service-details.php">Aliquam commodo suscipit vola neque. Aliquam erat utpat.</a></h4>
                             <div class="started">
-                                <a href="service-details.html">View Details<span><i class="bi bi-arrow-right"></i></span></a>
+                                <a href="service-details.php">View Details<span><i class="bi bi-arrow-right"></i></span></a>
                             </div>
                         </div>
                     </div>
