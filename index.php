@@ -79,10 +79,6 @@
     </section>
     <!-- End hero-area section -->
 
-    <!-- Start creative-services section -->
-    
-    <!-- End creative-services section -->
-
     <!-- Start popular-services section -->
     <section class="popular-services sec-m-top">
         <div class="container">
@@ -160,93 +156,9 @@
                                 <div class="author-thumb">
                                     <img src="assets/images/services/service-author-4.png" alt="">
                                 </div>
-                                <div class="author-content">
-                                    <span>Egens Lab</span>
-                                    <div class="ratting">
-                                        <ul class="stars">
-                                            <li><i class="fas fa-star"></i></li>
-                                            <li><i class="fas fa-star"></i></li>
-                                            <li><i class="fas fa-star"></i></li>
-                                            <li><i class="fas fa-star"></i></li>
-                                            <li><i class="fas fa-star"></i></li>
-                                        </ul>
-                                        <strong>(5/5)</strong>
-                                    </div>
-                                </div>
                             </div>
                             <h4><a href="service-details.html">Aliquam commodo suscipit vola neque. Aliquam erat utpat.</a></h4>
                             <div class="started">
-                                <span>Started At : <strong><small>$</small>250</strong></span>
-                                <a href="service-details.html">View Details<span><i class="bi bi-arrow-right"></i></span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow animate fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
-                    <div class="single-service">
-                        <div class="thumb">
-                            <a href="service-details.html"><img src="assets/images/services/service-5.jpg" alt=""></a>
-                            <div class="tag">
-                                <a href="service.html">House Sift</a>
-                            </div>
-                        </div>
-                        <div class="single-inner">
-                            <div class="author-info">
-                                <div class="author-thumb">
-                                    <img src="assets/images/services/service-author-5.png" alt="">
-                                </div>
-                                <div class="author-content">
-                                    <span>finibus</span>
-                                    <div class="ratting">
-                                        <ul class="stars">
-                                            <li><i class="fas fa-star"></i></li>
-                                            <li><i class="fas fa-star"></i></li>
-                                            <li><i class="fas fa-star"></i></li>
-                                            <li><i class="fas fa-star"></i></li>
-                                            <li><i class="fas fa-star"></i></li>
-                                        </ul>
-                                        <strong>(5/5)</strong>
-                                    </div>
-                                </div>
-                            </div>
-                            <h4><a href="service-details.html">Proin eget elit elit. Sed congueb neque vel nulla efficitur.</a></h4>
-                            <div class="started">
-                                <span>Started At : <strong><small>$</small>250</strong></span>
-                                <a href="service-details.html">View Details<span><i class="bi bi-arrow-right"></i></span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow animate fadeInUp" data-wow-delay="600ms" data-wow-duration="1500ms">
-                    <div class="single-service">
-                        <div class="thumb">
-                            <a href="service-details.html"><img src="assets/images/services/service-6.jpg" alt=""></a>
-                            <div class="tag">
-                                <a href="service.html">Electrician</a>
-                            </div>
-                        </div>
-                        <div class="single-inner">
-                            <div class="author-info">
-                                <div class="author-thumb">
-                                    <img src="assets/images/services/service-author-6.png" alt="">
-                                </div>
-                                <div class="author-content">
-                                    <span>Creasoft</span>
-                                    <div class="ratting">
-                                        <ul class="stars">
-                                            <li><i class="fas fa-star"></i></li>
-                                            <li><i class="fas fa-star"></i></li>
-                                            <li><i class="fas fa-star"></i></li>
-                                            <li><i class="fas fa-star"></i></li>
-                                            <li><i class="fas fa-star"></i></li>
-                                        </ul>
-                                        <strong>(5/5)</strong>
-                                    </div>
-                                </div>
-                            </div>
-                            <h4><a href="service-details.html">Mauris elit lectus, hendrerit eui quam at lobortisi.</a></h4>
-                            <div class="started">
-                                <span>Started At : <strong><small>$</small>250</strong></span>
                                 <a href="service-details.html">View Details<span><i class="bi bi-arrow-right"></i></span></a>
                             </div>
                         </div>
@@ -256,14 +168,6 @@
         </div>
     </section>
     <!-- End home-services section -->
-
-    <!-- Start features-shop section -->
-    
-    <!-- End features-shop section -->
-
-    <!-- Start offer-services section -->
-   
-    <!-- End offer-services section -->
 
     <!-- Start why-choose section -->
     <section class="why-choose sec-m">
@@ -460,132 +364,18 @@
     </section>
     <!-- End how-it-works section -->
 
-    <!-- Start lastest-blog section -->
-   
-    <!-- End lastest-blog section -->
-
     <!-- Start footer section -->
-    <footer class="footer-1">
-        <img src="assets/images/footer-left-shape.png" alt="" class="line-shape">
-        <div class="container">
-            <div class="footer-top">
-                <div class="row gy-5">
-                    <div class="col-md-6 col-lg-5">
-                        <div class="footer-widget with-logo">
-                            <div class="footer-logo">
-                                <a href="index.html"><img src="assets/images/footer-logo.svg" alt=""></a>
-                            </div>
-                            <p>Aenean fermentum sapien acena gravida. Fusce a ipsum metuslai. Suspendisse oi potenti.</p>
-                            <div class="request-btn">
-                                <a href="contact.html">Request a Service</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-2">
-                        <div class="footer-widget">
-                            <h4>Explore On</h4>
-                            <ul class="footer-menu">
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="blog.html">Blog Grid</a></li>
-                                <li><a href="#">Help & Support</a></li>
-                                <li><a href="service-details.html">Services Details</a></li>
-                                <li><a href="#">Privacy Policy</a></li>
-                                <li><a href="#">Terms of use</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-2">
-                        <div class="footer-widget">
-                            <h4>Categories</h4>
-                            <ul class="footer-menu">
-                                <li><a href="service.html">Electronics</a></li>
-                                <li><a href="service.html">Driver Service</a></li>
-                                <li><a href="service.html">Electric & Plumbing</a></li>
-                                <li><a href="service.html">Gadgets Repair</a></li>
-                                <li><a href="service.html">Security Service</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="footer-widget">
-                            <h4>Contacts</h4>
-                            <div class="information">
-                                <div class="info">
-                                    <div class="icon">
-                                        <i class="fas fa-phone-alt"></i>
-                                    </div>
-                                    <div class="desc">
-                                        <a href="tel:01761111456">+880 176 1111 456</a>
-                                        <a href="tel:01761111555">+880 176 1111 555</a>
-                                    </div>
-                                </div>
-                                <div class="info">
-                                    <div class="icon">
-                                        <i class="far fa-envelope"></i>
-                                    </div>
-                                    <div class="desc">
-                                        <a href="mailto:info@example.com">info@example.com</a>
-                                        <a href="mailto:info@support.com">info@support.com</a>
-                                    </div>
-                                </div>
-                                <div class="info">
-                                    <div class="icon">
-                                        <i class="fas fa-map-marker-alt"></i>
-                                    </div>
-                                    <div class="desc">
-                                        <p>168/170, Avenue 01, Mirpur DOHS, Bangladesh</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <div class="row align-items-center">
-                    <div class="col-lg-6">
-                        <div class="copy-right">
-                            <span>Copyright 2022 Serve | Design By <a href="https://www.egenslab.com/">Egens Lab</a></span>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="footer-social-media">
-                            <ul>
-                                <li><a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="https://www.pinterest.com"><i class="fab fa-pinterest-p"></i></a></li>
-                                <li><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+    
+    <?php
+        include_once('assets/scripts/footer.php');
+        include_once('assets/scripts/footer_links.php');
+    ?>
+
     <!-- End footer section -->
 
-    <!--  Main jQuery  -->
-    <script src="assets/js/jquery-3.6.0.min.js"></script>
-    <!-- Popper and Bootstrap JS -->
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <!-- Swiper slider JS -->
-    <script src="assets/js/swiper-bundle.min.js"></script>
-    <!-- Slick slider JS -->
-    <script src="assets/js/slick.js"></script>
-    <!-- Nice select JS -->
-    <script src="assets/js/jquery.nice-select.min.js"></script>
-    <!-- Waypoints JS -->
-    <script src="assets/js/waypoints.min.js"></script>
-    <!-- Counterup JS -->
-    <script src="assets/js/jquery.counterup.min.js"></script>
-    <!-- Magnific-popup  JS -->
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
-    <!-- Wow JS -->
-        <script src="assets/js/wow.min.js"></script>
-    <script src="assets/js/anime.min.js"></script>
-    <!-- Custom JS -->
-    <script src="assets/js/custom.js"></script>
+    
+
+    
 
 </body>
 
