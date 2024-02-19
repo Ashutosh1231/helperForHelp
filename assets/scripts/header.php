@@ -1,36 +1,10 @@
-<header class="header-1 sticky_top">
+    <header class="header-2 sticky_top">
         <div class="header-logo">
-            <a href="index.html"><img src="assets/images/logo.svg" alt=""></a>
+            <a href="index.html"><img src="assets/images/home2/logo.svg" alt=""></a>
         </div>
-        <div class="main-menu">
-            <nav class="main-nav">
-                <div class="mobile-menu-logo">
-                    <a href="index.html"><img src="assets/images/logo.svg" alt=""></a>
-                    <div class="remove">
-                        <i class="bi bi-plus-lg"></i>
-                    </div>
-                </div>
-                <ul>
-                    <li class="has-child active">
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li class="has-child">
-                        <a href="service.html">Services</a>
-                        <i class="bi bi-chevron-down"></i>
-                        <ul class="sub-menu">
-                            <li><a href="service.html">Services</a></li>
-                            <li><a href="service-details.html">Service Details</a></li>
-                        </ul>
-                    </li>
-                    
-                    <li><a href="contact.html">Contact Us</a></li>
-                </ul>
-                <div class="my-account">
-                    <a href="account.html">My Account</a>
-                </div>
-            </nav>
-        </div>
+        <?php
+            include_once('assets/scripts/menu.php');
+        ?>
         <div class="header-right">
             <div class="phone">
                 <div class="icon">
