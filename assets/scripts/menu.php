@@ -20,7 +20,7 @@
                 </ul>
             </li>
             
-            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="contact.php">Contact Us</a></li>
         </ul>
         <div class="my-account">
             <a href="account.html">My Account</a>
