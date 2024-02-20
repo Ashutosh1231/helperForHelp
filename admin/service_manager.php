@@ -35,7 +35,7 @@
           
                         <!-- Add Button -->
                         <div class='flex py-10 '>
-                            <button data-modal-target="add-service-modal" data-modal-toggle="add-service-modal" class="text-white  bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm sm:px-3 sm-py-3 sm:text-sm md:px-4 md:py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add New</button>
+                            <button data-modal-target="add-service-modal"  class="addservice text-white  bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm sm:px-3 sm-py-3 sm:text-sm md:px-4 md:py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add New</button>
                              
                         </div>
 
@@ -139,6 +139,19 @@
         <script>
                 $(document).ready(function(){
                     $('textarea').jqte();
+
+                    $('.addservice').click(function(e){
+                        e.preventDefault();
+                        $("#service_id").val('');
+                        $("#service_name").val('');
+                        $("#shortdesc").jqteVal('');
+                        $("#longdesc").jqteVal('');
+                        $("#features").jqteVal('');
+                        $("#status").val('');
+                        $("#action").val('add');
+                        const modal = FlowbiteInstances.getInstance('Modal', 'add-service-modal');
+                        modal.show();
+                    });
 
                     $('.editservice').click(function(e){
                         e.preventDefault();

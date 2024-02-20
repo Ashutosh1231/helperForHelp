@@ -336,7 +336,7 @@
                 });
                 $('.addvariable').click(function(e){
                     e.preventDefault();
-                    $("#service_city_id").val($(this).attr('service_city_id'));
+                    $("#varservice_city_id").val($(this).attr('service_city_id'));
                     $("#variable_id").val('');
                     $("#variable_action").val('addvariable');
 
@@ -345,7 +345,7 @@
                 });
                 $('.editvariable').click(function(e){
                     e.preventDefault();
-                    $("#service_city_id").val($(this).attr('servicecityid'));
+                    $("#varservice_city_id").val($(this).attr('servicecityid'));
                     $("#variable_id").val($(this).attr('variableid'));
                     $("#variable_name").val($(this).attr('variablename'));
                     $("#variable_status").val($(this).attr('variablestatus'));

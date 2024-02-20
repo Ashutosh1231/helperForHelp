@@ -108,6 +108,7 @@
             echo $result['status'];
         break;
         case 'addvariable':
+            print_r($_POST);
             $service_id = $_POST['service_id'];
             $service_city_id = $_POST['service_city_id'];
             $variable_name = $_POST['variable_name'];

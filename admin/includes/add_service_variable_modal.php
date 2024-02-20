@@ -19,7 +19,7 @@
             <div class="p-4 md:p-5">
                 <form name="addvariable" id="addvariable" class="space-y-4" action="service_save.php" method="POST">
                     <input type="hidden" name="service_id" id="service_id" value="<?=$id?>" />
-                    <input type='hidden' name='service_city_id' id='service_city_id' />
+                    <input type='hidden' name='service_city_id' id='varservice_city_id' />
                     <input type='hidden' name='variable_id' id='variable_id' />
                     <input type="hidden" name="action" id="variable_action" value="addvariable" />
     
