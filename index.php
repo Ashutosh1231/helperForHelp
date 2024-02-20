@@ -1,5 +1,11 @@
+<?php
+    include_once('includes/classes.php');
+    $db = new DB();
+    $city = new city($db->conn);
+    $cityresult = $city->fetchAllByStatus(1);
+?>
 <!doctype html>
-<html lang="en">
+    <html lang="en">
 
 <head>
     <!-- Required meta tags -->
@@ -75,12 +81,17 @@
                             <div class="location-btn">
                                 <i><img src="assets/images/icons/location.svg" alt=""></i>
                                 <select class="loc-select">
-                                    <option selected="">Dhaka</option>
-                                    <option value="barisal">Barisal</option>
-                                    <option value="khulna">Khulna</option>
-                                    <option value="Dhaka">Rangpur</option>
-                                    <option value="barisal">Sylhet</option>
-                                    <option value="khulna">Rajshahi</option>
+                                    <?php
+                                        $citycounter = 0;
+                                        if($cityresult['status'] == 'success'){
+                                            foreach($cityresult['data'] as $data){
+                                                ?>
+                                                    <option value="<?= $data['id']; ?> <?php echo $sel = ($citycounter==0) ? 'selected' : ''; ?>"><?= $data['name'] ?></option>
+                                                <?php
+                                                $citycounter++;
+                                            }
+                                        }
+                                    ?>
                                 </select>
                             </div>
                             <div class="location-form">
