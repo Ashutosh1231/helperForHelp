@@ -29,22 +29,22 @@
 
                     <div class='mb-2'>
                         <label class='block text-gray-700 text-sm font-bold mb-1' for='shortdesc'>Short Description </label>
-                        <textarea class='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline' placeholder='Enter Short Description' type='text' id='shortdesc' name="shortdesc"></textarea>
+                        <textarea class='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline' placeholder='Enter Short Description' type='text' id='shortdesc' name="shortdesc" required></textarea>
                     </div>
 
                     <div class='mb-2'>
                         <label class='block text-gray-700 text-sm font-bold mb-1' for='longdesc'>Long Description</label>
-                        <textarea class='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline' placeholder='Enter Long Description' type='text' id='longdesc' name="longdesc"></textarea>
+                        <textarea class='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline' placeholder='Enter Long Description' type='text' id='longdesc' name="longdesc" required></textarea>
                     </div>
 
                     <div class='mb-2'>
                         <label class='block text-gray-700 text-sm font-bold mb-1' for='features'>Features</label>
-                        <textarea class='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline' placeholder='Enter Features' type='text' id='features' name="features"></textarea>
+                        <textarea class='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline' placeholder='Enter Features' type='text' id='features' name="features" required></textarea>
                     </div>
 
                     <div class='mb-2'>
                         <label class='block text-gray-700 text-sm font-bold mb-1'>Status</label>
-                        <select class="select select-bordered w-full max-w-xs" id="status" name="status">
+                        <select class="select select-bordered w-full max-w-xs" id="status" name="status" required>
                             <option disabled selected>Select Status</option>
                             <option value="1">Enable</option>
                             <option value="0">Disable</option>
