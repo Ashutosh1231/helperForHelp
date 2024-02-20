@@ -78,31 +78,33 @@
                         volutpat at.</p>
                     <div class="find-service">
                         <div class="location-search">
-                            <div class="location-btn">
-                                <i><img src="assets/images/icons/location.svg" alt=""></i>
-                                <select class="loc-select">
-                                    <?php
-                                        $citycounter = 0;
-                                        if($cityresult['status'] == 'success'){
-                                            foreach($cityresult['data'] as $data){
-                                                ?>
-                                                    <option value="<?= $data['id']; ?> <?php echo $sel = ($citycounter==0) ? 'selected' : ''; ?>"><?= $data['name'] ?></option>
-                                                <?php
-                                                $citycounter++;
+                            <form action="#" method="post">
+                                <div class="location-btn">
+                                    <i><img src="assets/images/icons/location.svg" alt=""></i>
+                                    <select class="loc-select" name="location" id="location" required>
+                                        <?php
+                                            $citycounter = 0;
+                                            if($cityresult['status'] == 'success'){
+                                                foreach($cityresult['data'] as $data){
+                                                    ?>
+                                                        <option value="<?= $data['id']; ?>" <?php echo $sel = ($citycounter==0) ? 'selected' : ''; ?>><?= $data['name'] ?></option>
+                                                    <?php
+                                                    $citycounter++;
+                                                }
                                             }
-                                        }
-                                    ?>
-                                </select>
-                            </div>
-                            <div class="location-form">
-                                <form action="#" method="post">
-                                    <select name="location" id="location">
-                                        <option value="">Find Your Services Here</option>
-                                        <option value="">Brooming</option>
+                                        ?>
                                     </select>
-                                    <button type="submit"><i class="bi bi-search"></i></button>
-                                </form>
-                            </div>
+                                </div>
+                                <div class="location-form">
+                                    
+                                        <select name="service" id="service" required>
+                                            <option value="">Find Your Services Here</option>
+                                            <option value="">Brooming</option>
+                                        </select>
+                                        <button type="submit"><i class="bi bi-search"></i></button>
+                                    
+                                </div>
+                            </form>
                         </div>
                         <div class="suggest">
                             <span>Suggest For You:</span>
@@ -419,7 +421,18 @@
     ?>
 
     <!-- End footer section -->
+    <script>
+        $(document).ready(function(){
+            $("#location").change(function(){
+                var location_id = this.value;
+                var action ="fetchServicByLocation";
+                $.post("ajax.php", {location_id: location_id, action:action}, function(data){
+                    
+                });
+            });
+        });
 
+    </script>
     
 
     
