@@ -3,6 +3,18 @@
     $db = new DB();
     $city = new city($db->conn);
     $cityresult = $city->fetchAllByStatus(1);
+    $firstservicecity = $cityresult['data'][0]['id'];
+    $fservicecity = new ServiceCity($db->conn);
+    $fresult = $fservicecity->fetchByCityIdandStatus($firstservicecity,1);
+    if($fresult['status'] == 'success'){
+        $firstcityoptions = '';
+        $fservice = new service($db->conn);
+
+        for($i=0; $i < count($fresult['data']); $i++){
+            $fserviceresult = $fservice->fetchById($fresult['data'][$i]['service_id']);    
+            $firstcityoptions.='<option value="'.$fresult['data'][$i]['id'].'">'.$fserviceresult['data']['name'].'</option>';
+        }
+    }
 ?>
 <!doctype html>
     <html lang="en">
@@ -96,12 +108,11 @@
                                     </select>
                                 </div>
                                 <div class="location-form">
-                                    
-                                        <select name="service" id="service" required>
-                                            <option value="">Find Your Services Here</option>
-                                            <option value="">Brooming</option>
-                                        </select>
-                                        <button type="submit"><i class="bi bi-search"></i></button>
+                                    <select name="service" id="service" required>
+                                        <option value="">Find Your Services Here</option>
+                                        <?=$firstcityoptions;?>
+                                    </select>
+                                    <button type="submit"><i class="bi bi-search"></i></button>
                                     
                                 </div>
                             </form>
@@ -426,7 +437,10 @@
             $("#location").change(function(){
                 var location_id = this.value;
                 var action ="fetchServicByLocation";
-                $.post("ajax.php", {location_id: location_id, action:action}, function(data){
+                $.post("__f.php", {location_id: location_id, action:action}, function(data){
+                    data = '<option value="">Find Your Services Here</option>'+data;
+                    $("#service").empty().append(data);
+                    $("#service").niceSelect('update');
                     
                 });
             });
