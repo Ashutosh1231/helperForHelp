@@ -96,7 +96,10 @@
                             </div>
                             <div class="location-form">
                                 <form action="#" method="post">
-                                    <input type="text" name="location" placeholder="Find Your Services Here">
+                                    <select name="location" id="location">
+                                        <option value="">Find Your Services Here</option>
+                                        <option value="">Brooming</option>
+                                    </select>
                                     <button type="submit"><i class="bi bi-search"></i></button>
                                 </form>
                             </div>
