@@ -24,22 +24,22 @@
                     <div class='flex w-full mb-2'>
                         <div class='flex flex-col w-1/3 mx-2'>
                             <label class='block text-gray-700 text-sm font-bold mb-1' for='fname'>First Name</label>
-                            <input type='text' id='fname' name="fname" required class='w-full shadow appearance-none border rounded  text-gray-700 leading-tight focus:outline-none focus:shadow-outline' placeholder='Enter First Name' />
+                            <input type='text' id='fname' name="fname" required class='w-full shadow appearance-none border rounded  text-gray-700 leading-tight focus:outline-none focus:shadow-outline' placeholder='Enter First Name' required/>
                         </div>
                         <div class='flex flex-col  w-1/3 mx-2'>
                             <label class='block text-gray-700 text-sm font-bold mb-1' for='mname'>Middle Name</label>
-                            <input  type='text' id='mname' name="mname" class='shadow appearance-none border rounded  text-gray-700 leading-tight focus:outline-none focus:shadow-outline' placeholder='Enter Middle Name' />
+                            <input  type='text' id='mname' name="mname" class='shadow appearance-none border rounded  text-gray-700 leading-tight focus:outline-none focus:shadow-outline' placeholder='Enter Middle Name' required/>
                         </div>
                         <div class='flex flex-col w-1/3  mx-2'>
                             <label class='block text-gray-700 text-sm font-bold mb-1' for='lname'>Last Name</label>
-                            <input  type='text' id='lname' name="lname" required class='shadow appearance-none border rounded   text-gray-700 leading-tight focus:outline-none focus:shadow-outline' placeholder='Enter Last Name' />
+                            <input  type='text' id='lname' name="lname" required class='shadow appearance-none border rounded   text-gray-700 leading-tight focus:outline-none focus:shadow-outline' placeholder='Enter Last Name' required/>
                         </div>
                     </div>
 
                     <div class='flex mb-2 w-full'>
                         <div class='flex flex-col w-1/2  mx-2'>
                             <label class='block text-gray-700 text-sm font-bold mb-1' for='dob'>Date of Birth</label>
-                            <input type='date' id='dob' name="dob" class='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline' placeholder='Enter DOB' />
+                            <input type='date' id='dob' name="dob" class='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline' placeholder='Enter DOB' required/>
                         </div>
                         <div class='flex flex-row w-1/2  mx-2'>
                             <label class='block text-gray-700 text-sm font-bold mx-2 mt-6'>Gender</label>
@@ -52,24 +52,24 @@
 
                     <div class='mx-2 mb-2'>
                         <label class='block text-gray-700 text-sm font-bold mb-1' for='currentaddress'>Address</label>
-                        <textarea type='text' id='currentaddress' name="currentaddress" class='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline' placeholder='Enter Current Address'></textarea>
+                        <textarea type='text' id='currentaddress' name="currentaddress" class='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline' placeholder='Enter Current Address' required></textarea>
                     </div>
                         
                     <div class='flex w-full mb-2'>
                         <div class='flex flex-col  w-1/2 mx-2'>
                             <label class='block text-gray-700 text-sm font-bold mb-1' for='currentcity'>City</label>
-                            <input type='text' id='currentcity' name="currentcity" required class='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline' placeholder='Enter City'  />
+                            <input type='text' id='currentcity' name="currentcity" required class='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline' placeholder='Enter City'  required/>
                         </div>
 
                         <div class='flex flex-col w-1/2 mx-2'>
                             <label class='block text-gray-700 text-sm font-bold mb-1' for='currentpin'>Pincode : </label>
-                            <input type='number' id='currentpin' name="currentpin"required class='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline' placeholder='Enter Pincode'  />
+                            <input type='number' id='currentpin' name="currentpin"required class='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline' placeholder='Enter Pincode' required />
                         </div>
                     </div>
 
                     <div class='flex flex-col mx-2 mb-2'>
                         <label class='block text-gray-700 text-sm font-bold mb-1' for='email'>Email</label>
-                        <input type='email' id='email' name="email" class='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline' placeholder='Enter Email' />
+                        <input type='email' id='email' name="email" class='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline' placeholder='Enter Email' required />
                     </div>
 
                     <div class='flex mb-2'>
@@ -77,7 +77,7 @@
                             <label class='block text-gray-700 text-sm font-bold mb-1' for='mobile'>Mobile</label>
                             <div class='flex flex-row'>
                                 <div class='flex'>
-                                    <input type='number' id='mobile' name="mobile" required class='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline' placeholder='Enter Mobile Number' />
+                                    <input type='number' id='mobile' name="mobile" required class='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline' placeholder='Enter Mobile Number' required/>
                                 </div>
                                 <div class='flex mt-3 mx-2 '>
                                     <input id='whatsapp1' name='whatsapp1' type='radio' />
@@ -93,7 +93,7 @@
                             <label class='block text-gray-700 text-sm font-bold mb-1' for='mobile'>Alternate Mobile</label>
                             <div class='flex flex-row'>
                                 <div class='flex '>
-                                    <input type='number' id='alternate_mobile' name="alternate_mobile"  class='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline' placeholder='Enter Mobile Number' />
+                                    <input type='number' id='alternate_mobile' name="alternate_mobile"  class='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline' placeholder='Enter Mobile Number' required/>
                                 </div>
                                 <div class='flex mt-3 mx-2 '>
                                     <input id='whatsapp2' name='whatsapp2' type='radio' />
@@ -109,12 +109,12 @@
                     <div id="pwdrow" class='flex w-full mb-2'>
                         <div class='flex flex-col w-1/2 mx-2'>
                             <label class='block text-gray-700 text-sm font-bold mb-1' for='password'>Password</label>
-                            <input type='password' id='password' name="password" required class='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline' placeholder='Enter Password' />
+                            <input type='password' id='password' name="password" required class='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline' placeholder='Enter Password' required/>
                         </div>
 
                         <div class='flex flex-col w-1/2 mx-2'>
                             <label class='block text-gray-700 text-sm font-bold mb-1' for='repassword'>Retype Password : </label>
-                                <input  type='password' id='repassword' name="repassword" required class='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline' placeholder='Repeat Password' />
+                                <input  type='password' id='repassword' name="repassword" required class='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline' placeholder='Repeat Password' required/>
                         </div>
                     </div>
 

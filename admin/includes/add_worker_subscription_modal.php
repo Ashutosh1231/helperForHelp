@@ -22,12 +22,12 @@
                         <input type="hidden" id="action" name="action" />
                         <div class='mb-2'>
                             <label class='block text-gray-700 text-sm font-bold mb-1' for='name'>Plan Name</label>
-                            <input  class='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline' placeholder='Enter Name' type='text' id='name' name="name" />
+                            <input  class='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline' placeholder='Enter Name' type='text' id='name' name="name" required/>
                         </div>
 
                         <div class='w-full mb-2'>
                             <label class='block text-gray-700 text-sm font-bold mb-1'>City Name</label>
-                            <select id="city" name="city[]" multiple="multiple" required class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block p-2.5" style="width:100%">
+                            <select id="city" name="city[]" multiple="multiple" required class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block p-2.5" style="width:100%" required>
                                 <?php 
                                     if($cityresult['status']=='success'){
                                         foreach($cityresult['data'] as $city){
@@ -42,17 +42,17 @@
 
                         <div class='mb-2'>
                             <label class='block text-gray-700 text-sm font-bold mb-1' for='duration'>Duration <span class="text-xs">(in months)</span</label>
-                            <input id='duration' name="duration" class='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline' placeholder='Enter Duration'  type='number' />
+                            <input id='duration' name="duration" class='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline' placeholder='Enter Duration'  type='number' required/>
                         </div>
 
                         <div class='mb-2'>
                             <label class='block text-gray-700 text-sm font-bold mb-1' for='price'>Price</label>
-                            <input id='price' name="price" class='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline' placeholder='Enter Base Price' type='number' />
+                            <input id='price' name="price" class='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline' placeholder='Enter Base Price' type='number' required/>
                         </div>
 
                         <div class='w-full mb-2'>
                             <label class='block text-gray-700 text-sm font-bold mb-1'>Services</label>
-                            <select id="service" name="service[]" multiple="multiple" required class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block p-2.5" style="width:100%">
+                            <select id="service" name="service[]" multiple="multiple" required class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block p-2.5" style="width:100%" required>
                                 <?php 
                                     if($cityresult['status']=='success'){
                                         foreach($serviceresult['data'] as $service){
