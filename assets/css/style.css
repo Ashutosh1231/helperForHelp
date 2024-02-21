@@ -897,6 +897,9 @@ header {
 
 .header-logo a {
   display: inline-block;
+  font-size: 1.8rem;
+  color: #ec1567;
+  font-weight: 300;  
 }
 
 .header-logo a img {
