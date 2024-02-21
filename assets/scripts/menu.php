@@ -1,3 +1,9 @@
+<?php
+    include_once('includes/classes.php');
+    $mdb = new DB();
+    $mservice = new service($mdb->conn);
+    $mresult = $mservice->fetchByStatus(1);
+?>
 <div class="main-menu">
     <nav class="main-nav">
         <div class="mobile-menu-logo">
@@ -13,11 +19,22 @@
             <li><a href="about.php">About Us</a></li>
             <li class="has-child">
                 <a href="service.php">Services</a>
-                <i class="bi bi-chevron-down"></i>
-                <ul class="sub-menu">
-                    <li><a href="service.php">Services</a></li>
-                    <li><a href="service-details.php">Service Details</a></li>
-                </ul>
+                <?php
+                    if($mresult['status'] == 'success'){
+                        ?>
+                        <i class="bi bi-chevron-down"></i>
+                        <ul class="sub-menu">        
+                        <?php
+                            foreach($mresult['data'] as $key => $value){
+                                ?>
+                                <li><a href="service-details.php?id=<?php echo $value['id']; ?> "><?php echo $value['name']; ?></a></li>
+                                <?php
+                            }
+                        ?>
+                        </ul>
+                        <?php
+                    }
+                ?>
             </li>
             
             <li><a href="contact.php">Contact Us</a></li>
