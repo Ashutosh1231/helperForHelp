@@ -115,8 +115,9 @@
                                         <?=$serviceresult['data']['features'];?>
                                     </ul>
                                 </div>
+                                <div class="form-city">
                                 <form action="getcustomerinfo.php" method="POST" name="precustomerinfo" id="precustomerinfo">
-                                    <div class="form-group">
+                                    <div>
                                         <select name="servicecity" id="servicecity" required>
                                             <?php
                                                 if($servicecityresult['status'] == 'success'){
@@ -132,11 +133,12 @@
                                                 }  
                                             ?>
                                         </select>
+                                        <div>
+                                            <button type="submit">Order Now</button>
+                                        </div>
                                     </div>
-                                <div class="book-btn">
-                                    <button type="submit">Order Now</button>
-                                </div>
                                 </form>
+                                </div>
                             </div>
                         </div>
                         

@@ -64,9 +64,6 @@
                                         <div class="tag">
                                             <a href="service-details.php?service_id=<?=$service['id'];?>"><?=$service['name']?></a>
                                         </div>
-                                        <div class="wish">
-                                            <a href="#"><i class="bi bi-suit-heart"></i></a>
-                                        </div>
                                     </div>
                                     <div class="single-inner">
                                         <h4><a href="service-details.php?service_id=<?=$service['id'];?>"><?=$service['name']?></a></h4>

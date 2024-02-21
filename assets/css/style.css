@@ -7382,11 +7382,12 @@ footer .line-shape {
 
 .form-city{
   padding: 30px;
-  margin-bottom: 20px;
+  margin-left: 30px;
 }
 
 .form-city form{
   width: 100%;
+  margin-bottom: 20px;
 }
 
 .form-city form span{
@@ -7395,11 +7396,11 @@ footer .line-shape {
   color: #ce1567;
 }
 
-.book-btn {
+.form-city form button {
   padding: 0 30px 30px;
 }
 
-.book-btn a {
+.form-city form button {
   position: relative;
   background-color: #142935;
   border-radius: 5px;
@@ -7415,7 +7416,7 @@ footer .line-shape {
   width: 280px;
 }
 
-.book-btn a:before {
+.form-city form button:before {
   width: 100%;
   height: 100%;
   content: '';
@@ -7429,7 +7430,7 @@ footer .line-shape {
   z-index: -1;
 }
 
-.book-btn a:after {
+.form-city form button:after {
   width: 100%;
   height: 100%;
   content: '';
@@ -7443,16 +7444,16 @@ footer .line-shape {
   z-index: -1;
 }
 
-.book-btn a:hover {
+.form-city form button:hover {
   color: #fff;
 }
 
-.book-btn a:hover:before {
+.form-city form button:hover:before {
   transform: rotateX(90deg);
   z-index: 1;
 }
 
-.book-btn a:hover:after {
+.form-city form button:hover:after {
   transform: rotateY(90deg);
   z-index: 1;
 }
