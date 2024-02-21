@@ -542,6 +542,23 @@
             return $data;
         }
 
+        public function fetchByIdandStatus($id, $status){
+            $sql = $this->conn->prepare("SELECT * FROM city WHERE `id` = :id AND `status` = :status");
+            if($sql->execute(['id' => $id, 'status' => $status])){
+                if($sql->rowCount() > 0){
+                    $data['status'] = 'success';
+                    $data['data'] = $sql->fetchAll(PDO::FETCH_ASSOC);
+                }
+                else{
+                    $data['status'] = 'No Data';
+                }
+            }
+            else{
+                $data['status'] = 'failure';
+            }
+            return $data;
+        }
+
         public function changeStatus($id, $status){
             $sql = $this->conn->prepare("UPDATE city SET `status` = :status WHERE `id` = :id");
             if($sql->execute(['id' => $id, 'status' => $status])){
@@ -809,6 +826,23 @@
         public function fetchByCityIdandStatus($city_id, $status){
             $sql = $this->conn->prepare("SELECT * FROM `service_city` WHERE `city_id`=:city_id AND `status`=:status");
             if($sql->execute([':city_id' => $city_id, ':status' => $status])){
+                if($sql->rowCount() > 0){
+                    $data['status'] = 'success';
+                    $data['data'] = $sql->fetchAll(PDO::FETCH_ASSOC);
+                }
+                else{
+                    $data['status'] = 'No Data';
+                }
+            }
+            else{
+                $data['status'] = 'failure';
+            }
+            return $data;
+        }
+
+        public function fetchByServiceIdandStatus($service_id, $status){
+            $sql = $this->conn->prepare("SELECT * FROM `service_city` WHERE `service_id`=:service_id AND `status`=:status");
+            if($sql->execute([':service_id' => $service_id, ':status' => $status])){
                 if($sql->rowCount() > 0){
                     $data['status'] = 'success';
                     $data['data'] = $sql->fetchAll(PDO::FETCH_ASSOC);
