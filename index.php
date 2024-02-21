@@ -42,7 +42,7 @@
         
         <header class="header-1 sticky_top">
             <div class="header-logo">
-                <a href="index.php"><img src="assets/images/logo.svg" alt=""></a>
+                <a href="index.php"><img src="assets/logo/helper-for-hire-favicon-color.png" alt=""></a>
             </div>
             <?php
                 include_once('assets/scripts/menu.php');
