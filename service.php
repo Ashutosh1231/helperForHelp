@@ -1,3 +1,11 @@
+<?php
+    include_once('includes/classes.php');
+    $db = new DB();
+    $service = new service($db->conn);
+    $result = $service->fetchByStatus(1);
+
+?>
+
 <!doctype html>
 <html lang="en">
 
@@ -44,31 +52,38 @@
     <section id="down" class="services-area sec-m-top">
         <div class="container">
             <div class="row g-4">
-                <div class="col-md-6 col-lg-4 wow animate fadeInLeft" data-wow-delay="200ms" data-wow-duration="1500ms">
-                    <div class="single-service layout-2">
-                        <div class="thumb">
-                            <a href=""><img src="assets/images/services/service-1.jpg" alt=""></a>
-                            <div class="tag">
-                                <a href="service.php">Saloon</a>
-                            </div>
-                            <div class="wish">
-                                <a href="account.php"><i class="bi bi-suit-heart"></i></a>
-                            </div>
-                        </div>
-                        <div class="single-inner">
-                            <div class="author-info">
-                                <div class="author-thumb">
-                                    <img src="assets/images/services/service-author-1.png" alt="">
+                
+                <?php
+                    if($result['status'] == 'success'){
+                        foreach($result['data'] as $service){
+                            ?>
+                            <div class="col-md-6 col-lg-4 wow animate fadeInLeft" data-wow-delay="200ms" data-wow-duration="1500ms">
+                                <div class="single-service layout-2">
+                                    <div class="thumb">
+                                        <a href=""><img src="assets/images/services/service-1.jpg" alt=""></a>
+                                        <div class="tag">
+                                            <a href="service-details.php?service_id=<?=$service['id'];?>"><?=$service['name']?></a>
+                                        </div>
+                                        <div class="wish">
+                                            <a href="#"><i class="bi bi-suit-heart"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="single-inner">
+                                        <h4><a href="service-details.php?service_id=<?=$service['id'];?>"><?=$service['name']?></a></h4>
+                                        <p><?=html_entity_decode($service['short_desc']);?></p>
+                                        <div class="started">
+                                            <a href="service-details.php?service_id=<?=$service['id'];?>">View Details<span><i class="bi bi-arrow-right"></i></span></a>
+                                            
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <h4><a href="service-details.php">Sed elit massa, maximus quisen fermentum auctor.</a></h4>
-                            <div class="started">
-                                <a href="service-details.php">View Details<span><i class="bi bi-arrow-right"></i></span></a>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                            <?php
+                        }
+                    }
+                ?>
+                    
+                
             </div>
         </div>
     </section>
