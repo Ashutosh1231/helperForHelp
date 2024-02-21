@@ -1,3 +1,24 @@
+<?php
+    include_once("includes/classes.php");
+    $db = new DB();
+    if(isset($_GET['id']) and $_GET['id'] > 0){
+        $id = $_GET['id'];
+        $service = new service($db->conn);
+        $servicecity = new ServiceCity($db->conn);
+        $serviceresult = $service->fetchById($id);
+        if($serviceresult['status'] == 'success'){
+            $servicecityresult = $servicecity->fetchByServiceIdandStatus($id,1);        
+        }
+        else{
+            header('location:index.php');
+        }
+    }
+    else{
+        header('location:index.php');
+    }
+    
+
+?>
 <!doctype html>
 <html lang="en">
 
@@ -48,7 +69,7 @@
                         <div class="service-details-thumbnail">
                             <img src="assets/images/services/service-details.jpg" alt="">
                         </div>
-                        <H2>Cleaning Package (Bedroom + Sofa + Furniture + Bathroom)</H2>
+                        <H2><?=$serviceresult['data']['name'];?></H2>
                         <div class="service-tabs wow animate fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
                             <div class="tab-content" id="pills-tabContent">
                                 <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
@@ -87,27 +108,35 @@
                     <div class="service-sidebar">
                         <div class="service-widget wow animate fadeInRight" data-wow-delay="200ms" data-wow-duration="1500ms">
                             <div class="service-pack">
-                                <h4>Service Price </h4>
+                                <h4>Service Package </h4>
                                 <div class="package">
-                                    <h4>Our Package</h4>
+                                    <h4>Features</h4>
                                     <ul class="package-list">
-                                        <li><i class="bi bi-check-all"></i>Garbage Disposal Services</li>
-                                        <li><i class="bi bi-check-all"></i>Water Heater Repair Services</li>
-                                        <li><i class="bi bi-check-all"></i>Toilet Repair</li>
-                                        <li><i class="bi bi-check-all"></i>Kitchen Cleaner</li>
+                                        <?=$serviceresult['data']['features'];?>
                                     </ul>
                                 </div>
-                                <div class="form-city">
-                                    <form>
-                                        <select name="location" id="location" required>
-                                            <option value="">Choose Location</option>
-                                            <option value="1">Akola</option>
+                                <form action="getcustomerinfo.php" method="POST" name="precustomerinfo" id="precustomerinfo">
+                                    <div class="form-group">
+                                        <select name="servicecity" id="servicecity" required>
+                                            <?php
+                                                if($servicecityresult['status'] == 'success'){
+                                                    $city = new city($db->conn);
+                                                    foreach($servicecityresult['data'] as $servicecity){
+                                                        $cityresult = $city->fetchByIdandStatus($servicecity['city_id'],1);
+                                                        $cityname = $cityresult['data'][0]['name'];
+                                                        ?>
+                                                        
+                                                        <option value="<?=$servicecity['id'];?>"><?=$cityname;?></option>';
+                                                        <?php
+                                                    }
+                                                }  
+                                            ?>
                                         </select>
-                                    </form>
-                                </div>
+                                    </div>
                                 <div class="book-btn">
-                                    <a href="contact.php">Order Now</a>
+                                    <button type="submit">Order Now</button>
                                 </div>
+                                </form>
                             </div>
                         </div>
                         
