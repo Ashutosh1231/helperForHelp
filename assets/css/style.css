@@ -906,6 +906,13 @@ header {
   max-width: 180px;
 }
 
+.header-logo a span{
+  position: relative;
+  top: 6px;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
 .main-menu .main-nav ul {
   list-style: none;
 }
@@ -2783,6 +2790,7 @@ header {
 ===========================*/
 .footer-1 {
   position: relative;
+  margin-top: 50px;
 }
 
 .footer-1:before {
@@ -7372,6 +7380,21 @@ footer .line-shape {
   font-size: 22px;
 }
 
+.form-city{
+  padding: 30px;
+  margin-bottom: 20px;
+}
+
+.form-city form{
+  width: 100%;
+}
+
+.form-city form span{
+  font-size: 18px;
+  font-weight: 600;
+  color: #ce1567;
+}
+
 .book-btn {
   padding: 0 30px 30px;
 }
@@ -7389,6 +7412,7 @@ footer .line-shape {
   padding: 15px 30px;
   overflow: hidden;
   z-index: 1;
+  width: 280px;
 }
 
 .book-btn a:before {

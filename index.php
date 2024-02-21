@@ -23,7 +23,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SERVE - On Demand Services HTML Template</title>
+    <title>Helper For Hire</title>
     <?php
         include_once('assets/scripts/header_links.php');
     ?>
@@ -42,8 +42,7 @@
         
         <header class="header-1 sticky_top">
             <div class="header-logo">
-                <a href="index.php"><img src="assets/logo/helper-for-hire-favicon-color.png" style="height: 52px; margin-right: 2px;" alt="">Helper For Hire</a>
-
+                <a href="index.php"><img src="assets/logo/helper-for-hire-favicon-color.png" style="height: 52px; margin-right: 2px;" alt=""><span>Helper For Hire</span></a>
             </div>
             <?php
                 include_once('assets/scripts/menu.php');
@@ -57,9 +56,6 @@
                         <span>Call Us Now</span>
                         <a href="tel:01701111000">+880 170 1111 000</a>
                     </div>
-                </div>
-                <div class="wishlist">
-                    <a href="account.php"><i class="bi bi-suit-heart"></i></a>
                 </div>
                 <div class="account-btn">
                     <a href="account.php">My Account</a>
@@ -167,11 +163,6 @@
                             </div>
                         </div>
                         <div class="single-inner">
-                            <div class="author-info">
-                                <div class="author-thumb">
-                                    <img src="assets/images/services/service-author-1.png" alt="">
-                                </div>
-                            </div>
                             <h4><a href="service-details.php">Sed elit massa, maximus quisen fermentum auctor.</a></h4>
                             <div class="started">
                                 
@@ -213,11 +204,6 @@
                             </div>
                         </div>
                         <div class="single-inner">
-                            <div class="author-info">
-                                <div class="author-thumb">
-                                    <img src="assets/images/services/service-author-4.png" alt="">
-                                </div>
-                            </div>
                             <h4><a href="service-details.php">Aliquam commodo suscipit vola neque. Aliquam erat utpat.</a></h4>
                             <div class="started">
                                 <a href="service-details.php">View Details<span><i class="bi bi-arrow-right"></i></span></a>

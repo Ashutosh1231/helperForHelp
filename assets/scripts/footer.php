@@ -6,7 +6,7 @@
                     <div class="col-md-6 col-lg-5">
                         <div class="footer-widget with-logo">
                             <div class="footer-logo">
-                                <a href="index.php"><img src="assets/images/footer-logo.svg" alt=""></a>
+                                <a href="index.php"><img src="assets/logo/logo-white-no-background.png" alt="a"></a>
                             </div>
                             <p>Aenean fermentum sapien acena gravida. Fusce a ipsum metuslai. Suspendisse oi potenti.</p>
                             <div class="request-btn">
@@ -66,7 +66,7 @@
                                         <i class="fas fa-map-marker-alt"></i>
                                     </div>
                                     <div class="desc">
-                                        <p>168/170, Avenue 01, Mirpur DOHS, Bangladesh</p>
+                                        <p>Varanasi, India</p>
                                     </div>
                                 </div>
                             </div>
@@ -78,7 +78,7 @@
                 <div class="row align-items-center">
                     <div class="col-lg-6">
                         <div class="copy-right">
-                            <span>Copyright 2022 Serve | Design By <a href="https://www.egenslab.com/">Egens Lab</a></span>
+                            <span>Copyright 2024 H4H | Design By <a href="https://umbrella-technologies.com/">Umbrella Technologies</a></span>
                         </div>
                     </div>
                     <div class="col-lg-6">

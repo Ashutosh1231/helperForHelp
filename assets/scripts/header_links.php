@@ -1,4 +1,4 @@
-<link rel="icon" href="assets/images/faviconS.png" type="image/gif" sizes="20x20">
+<link rel="icon" href="assets/logo/helper-for-hire-favicon-color.png" type="image/gif" sizes="20x20">
 
     <!-- Bootstrap CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">

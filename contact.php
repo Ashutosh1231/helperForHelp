@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SERVE - On Demand Services HTML Template</title>
+    <title>Helper For Hire</title>
     <?php
         include_once('assets/scripts/header_links.php');
     ?>
@@ -111,7 +111,7 @@
     <div class="google-map">
         <div class="container-fluid p-0">
             <div class="gmap_canvas">
-                <iframe id="gmap_canvas" src="https://maps.app.goo.gl/vFkGm3yTSm7JeK7o7"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14930.282574944416!2d77.0142564!3d20.6870398!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd72df93a4391b7%3A0xd70fab20bfca37ff!2sUmbrella%20Technologies!5e0!3m2!1sen!2sin!4v1708516554570!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </div>

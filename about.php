@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SERVE - On Demand Services HTML Template</title>
+    <title>Helper For Hire</title>
     <?php
         include_once('assets/scripts/header_links.php');
     ?>
@@ -289,37 +289,6 @@
         </div>
     </section>
     <!-- End choose-us section -->
-
-    <!-- Start our-brands section -->
-    <div class="our-brands sec-m">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="brands">
-                        <div class="single-brand wow animate fadeInLeft" data-wow-delay="200ms" data-wow-duration="1500ms">
-                            <i><img src="assets/images/brand/brand-1.png" alt=""></i>
-                        </div>
-                        <div class="single-brand wow animate fadeInLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
-                            <i><img src="assets/images/brand/brand-2.png" alt=""></i>
-                        </div>
-                        <div class="single-brand wow animate fadeInLeft" data-wow-delay="400ms" data-wow-duration="1500ms">
-                            <i><img src="assets/images/brand/brand-3.png" alt=""></i>
-                        </div>
-                        <div class="single-brand wow animate fadeInLeft" data-wow-delay="500ms" data-wow-duration="1500ms">
-                            <i><img src="assets/images/brand/brand-4.png" alt=""></i>
-                        </div>
-                        <div class="single-brand wow animate fadeInLeft" data-wow-delay="600ms" data-wow-duration="1500ms">
-                            <i><img src="assets/images/brand/brand-5.png" alt=""></i>
-                        </div>
-                        <div class="single-brand wow animate fadeInLeft" data-wow-delay="700ms" data-wow-duration="1500ms">
-                            <i><img src="assets/images/brand/brand-6.png" alt=""></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End our-brands section -->
 
     <!-- Start footer section -->
     <?php 

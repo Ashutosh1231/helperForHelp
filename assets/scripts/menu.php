@@ -13,11 +13,6 @@
             <li><a href="about.php">About Us</a></li>
             <li class="has-child">
                 <a href="service.php">Services</a>
-                <i class="bi bi-chevron-down"></i>
-                <ul class="sub-menu">
-                    <li><a href="service.php">Services</a></li>
-                    <li><a href="service-details.php">Service Details</a></li>
-                </ul>
             </li>
             
             <li><a href="contact.php">Contact Us</a></li>
