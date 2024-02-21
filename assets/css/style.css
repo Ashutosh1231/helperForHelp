@@ -1409,7 +1409,7 @@ header {
 
 .find-service .location-search .location-btn {
   position: relative;
-  margin-right: 25px;
+  margin-right: 15px;
   display: inline-block;
 }
 
@@ -1428,7 +1428,7 @@ header {
 }
 
 .find-service .location-search .location-btn .nice-select.loc-select {
-  height: 60px;
+  height: 40px;
   background-color: #ce1567;
   background-image: none;
   border: none;
@@ -1451,7 +1451,7 @@ header {
   font-size: 20px;
   color: #FFFFFF;
   text-align: center;
-  margin-top: 11px;
+  margin-top: 0px;
   margin-bottom: 0;
 }
 
@@ -1460,15 +1460,15 @@ header {
 }
 
 .find-service .location-search .location-form {
-  display: inline-block;
-  width: 100%;
+  display: inline-flex;
+  justify-content: space-evenly;
 }
 
-.find-service .location-search .location-form form {
-  position: relative;
+.find-service .location-search .location-form  {
+  position: absolute;
 }
 
-.find-service .location-search .location-form form input {
+.find-service .location-search .location-form  input {
   background-color: #FFFFFF;
   border: 1px solid #EEEEEE;
   box-sizing: border-box;
@@ -1482,30 +1482,30 @@ header {
 }
 
 @media (max-width: 767px) {
-  .find-service .location-search .location-form form input {
+  .find-service .location-search .location-form  input {
     height: 50px;
   }
 }
 
-.find-service .location-search .location-form form input[type="text"] {
+.find-service .location-search .location-form  input[type="text"] {
   padding-right: 60px;
 }
 
-.find-service .location-search .location-form form button {
-  position: absolute;
-  right: 5px;
+.find-service .location-search .location-form  button {
+  position: relative;
+  left: 5px;
   background-color: #ce1567;
   border-radius: 10px;
   border: none;
   color: #fff;
-  height: 50px;
-  width: 50px;
-  top: 5px;
+  height: 40px;
+  width: 40px;
+  top: 0px;
   font-size: 20px;
 }
 
 @media (max-width: 767px) {
-  .find-service .location-search .location-form form button {
+  .find-service .location-search .location-form  button {
     height: 40px;
     width: 40px;
     font-size: 18px;
