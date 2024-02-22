@@ -19,11 +19,9 @@
                             <h4>Explore On</h4>
                             <ul class="footer-menu">
                                 <li><a href="index.php">Home</a></li>
-                                <li><a href="blog.php">Blog Grid</a></li>
-                                <li><a href="#">Help & Support</a></li>
                                 <li><a href="service-details.php">Services Details</a></li>
-                                <li><a href="#">Privacy Policy</a></li>
-                                <li><a href="#">Terms of use</a></li>
+                                <li><a href="privacyPolicy.php">Privacy Policy</a></li>
+                                <li><a href="termOfUse.php">Terms of use</a></li>
                             </ul>
                         </div>
                     </div>
@@ -31,11 +29,13 @@
                         <div class="footer-widget">
                             <h4>Categories</h4>
                             <ul class="footer-menu">
-                                <li><a href="service.php">Electronics</a></li>
-                                <li><a href="service.php">Driver Service</a></li>
-                                <li><a href="service.php">Electric & Plumbing</a></li>
-                                <li><a href="service.php">Gadgets Repair</a></li>
-                                <li><a href="service.php">Security Service</a></li>
+                                <li><a href="service-details.php?id=1">Brooming</a></li>
+                                <li><a href="service-details.php?id=2">Moping</a></li>
+                                <li><a href="service-details.php?id=3">Cooking</a></li>
+                                <li><a href="service-details.php?id=4">Baby Care Taker</a></li>
+                                <li><a href="service-details.php?id=5">All Rounder</a></li>
+                                <li><a href="service-details.php?id=6">24 Hrs Live-In</a></li>
+                                <li><a href="service-details.php?id=7">House Maid</a></li>
                             </ul>
                         </div>
                     </div>
