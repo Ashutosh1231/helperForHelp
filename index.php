@@ -87,7 +87,7 @@
                         volutpat at.</p>
                     <div class="find-service">
                         <div class="location-search">
-                            <form action="#" method="post">
+                            <form action="getcustomerinfo.php" name="locationserviceform" id="locationserviceform" method="post">
                                 <div class="location-btn">
                                     <i><img src="assets/images/icons/location.svg" alt="" style="padding-bottom: 8px;"></i>
                                     <select class="loc-select" name="location" id="location" required>

@@ -74,30 +74,7 @@
                             <div class="tab-content" id="pills-tabContent">
                                 <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
                                     <div class="service-overview  wow animate fadeInRight" data-wow-delay="400ms" data-wow-duration="1500ms">
-                                        <h4>Plumbing Training</h4>
-                                        <p>Obtain pain of because is pain, but because you nally circumstances more than some work um soluta nobis est eligendi optio cumque nihil impedit quo minus id quodOne advanced diverted domestic repeated bringing you old. Possible procured her trifling</p>
-                                        <div class="package">
-                                            <h4>Our Package</h4>
-                                            <ul class="package-list">
-                                                <li><i class="bi bi-check-all"></i>Page Load (time, size, number of requests).</li>
-                                                <li><i class="bi bi-check-all"></i>Adance Data analysis operation.</li>
-                                            </ul>
-                                        </div>
-                                        <div class="include-exclude">
-                                            <h4>What’s Included</h4>
-                                            <ul>
-                                                <li><i class="bi bi-circle-fill"></i>There are many variations of passages of Lorem Ipsum.</li>
-                                                <li><i class="bi bi-circle-fill"></i>Water Heater Repair Services</li>
-                                                <li><i class="bi bi-circle-fill"></i>Toilet Repair</li>
-                                            </ul>
-                                        </div>
-                                        <div class="include-exclude">
-                                            <h4>What’s Excluded</h4>
-                                            <ul>
-                                                <li><i class="bi bi-circle-fill"></i>Price of additional materials or parts (if needed)</li>
-                                                <li><i class="bi bi-circle-fill"></i>Transportation cost for carrying new materials/parts (if applicable)</li>
-                                            </ul>
-                                        </div>
+                                        <?=html_entity_decode($serviceresult['data']['long_desc']);?>
                                     </div>
                                 </div>
                             </div>
@@ -112,7 +89,7 @@
                                 <div class="package">
                                     <h4>Features</h4>
                                     <ul class="package-list">
-                                        <?=$serviceresult['data']['features'];?>
+                                        <?=html_entity_decode($serviceresult['data']['features']);?>
                                     </ul>
                                 </div>
                                 <div class="form-city">
@@ -124,11 +101,13 @@
                                                     $city = new city($db->conn);
                                                     foreach($servicecityresult['data'] as $servicecity){
                                                         $cityresult = $city->fetchByIdandStatus($servicecity['city_id'],1);
-                                                        $cityname = $cityresult['data'][0]['name'];
-                                                        ?>
+                                                        if($cityresult['status'] == 'success'){
+                                                            $cityname = $cityresult['data'][0]['name'];
+                                                            ?>
                                                         
-                                                        <option value="<?=$servicecity['id'];?>"><?=$cityname;?></option>';
-                                                        <?php
+                                                            <option value="<?=$servicecity['id'];?>"><?=$cityname;?></option>';
+                                                            <?php
+                                                        }
                                                     }
                                                 }  
                                             ?>

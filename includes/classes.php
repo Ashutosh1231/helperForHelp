@@ -27,14 +27,14 @@
 			if($query->execute($prep_array)){
 				if($query->rowCount() > 0){
 					$res['data'] = $query->fetchAll();
-					$res['msg'] = 'success';
+					$res['status'] = 'success';
 				}
 				else{
-					$res['msg'] = 'No data found';
+					$res['status'] = 'No data found';
 				}
 			}
 			else{
-				$res['msg'] = 'failure';
+				$res['status'] = 'failure';
 			}
 			return $res;  	
 		}
