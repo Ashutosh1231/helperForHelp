@@ -13,6 +13,12 @@
     }
     $utiltiy = new Utility();
 
+    $servicecityp = new serviceCity($db->conn);
+    $servicecitypresult = $servicecityp->fetch($servicecityid);
+    if($servicecitypresult['status'] == 'success'){
+        $base_price = $servicecitypresult['data']['base_price'];
+    }
+
     $servicenamesql = $db->conn->prepare("SELECT name FROM `service` WHERE `id`= (SELECT `service_id` FROM `service_city` WHERE `id` = :servicecityid) ");
     $servicenameresult = $utiltiy->fetch($db->conn, $servicenamesql, [':servicecityid' => $servicecityid]);
     if($servicenameresult['status'] == 'success'){
@@ -52,7 +58,7 @@
             //<!-- End header section -->
         ?>
         
-        <div>
+        <div class="container">
             <h1><?=$servicename;?> services in <?=$cityname;?></h1>
             <?php
                 if($sgoresult['status'] == 'success'){
@@ -61,6 +67,8 @@
                     ?>
                     <form id="servicecityvariableoptions" name="servicecityvariableoptions" method="POST" action="address.php">
                         <input type="hidden" name="variablecount" id="variablecount" value="<?=$variablecount;?>"/>
+                        <input type="hidden" name="servicecityid" id="servicecityid" value="<?=$servicecityid;?>"/>
+                        <input type="hidden" name="base_price" id="base_price" value="<?=$base_price;?>"/>
                         <?php
                         $sgooptions = new sgoOptions($db->conn);
                         foreach($sgoresult['data'] as $data){
@@ -73,7 +81,7 @@
                                     <?php
                                         foreach($sgooptionsresult['data'] as $optionsdata){
                                             ?>
-                                            <input type="radio" id="servicevariable<?=$optionsdata['id'];?>" name="servicevariable<?=$variablecounter;?>" value="<?=$optionsdata['id'];?>"/>
+                                            <input type="radio" id="servicevariable<?=$optionsdata['id'];?>" name="servicevariable<?=$variablecounter;?>" value="<?=$optionsdata['id'];?>" class="voptions" />
                                             <label for="servicevariable<?=$optionsdata['id'];?>"><?=$optionsdata['name'];?></label>        
                                             <?php                                        
                                         }
@@ -85,6 +93,7 @@
                             
                         }
                         ?>
+                        <div class="">Approximate Value = <span class="appvalue"><?=$base_price;?></span></div>
                     </form>
                     <?php
                     
@@ -100,6 +109,32 @@
         <!-- End footer section -->
         <script>
             
+            var approxval = 0;
+            $(".voptions").change(function(e){
+                e.preventDefault();
+                function approxvalf(data){
+                    approvxal = parseFloat(approxval) + parseFloat(data);
+                    $(".appvalue").html(approxval); 
+                }
+                var baseprice = parseFloat($("#base_price").val());
+                var max = $("#variablecount").val();
+                var count = 0;
+                approxval = baseprice;
+                for(var i = 1; i <= max; i++){
+                    var optionid =  $('input[name="servicevariable'+i+'"]:checked').val();
+                    if(optionid != null){
+                        $.post("__f.php",{optionid:optionid, action:"getoptionprice"},function(data){
+                            if(data != 'failure'){
+                                approxval = parseFloat(approxval) + parseFloat(data);
+                                //alert(approxval);
+                                approxvalf(data);
+                            }
+                        });
+                    }
+                }
+                
+                
+            });
         </script>
     </body>
 

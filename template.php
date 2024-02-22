@@ -22,7 +22,7 @@
             //<!-- End header section -->
         ?>
         
-        <div>Ashu</div>
+        <div class="container">Ashu</div>
 
         <!-- Start footer section --> 
         <?php

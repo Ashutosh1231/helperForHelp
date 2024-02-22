@@ -17,6 +17,17 @@
                     }
                 }
             break;
+            case 'getoptionprice':
+                $optionid = $_POST['optionid'];
+                $option = new sgoOptions($db->conn);
+                $optionresult = $option->fetch($optionid);
+                if($optionresult['status'] == 'success'){
+                    echo $optionresult['data']['price'];
+                }
+                else{
+                    echo 'failure';
+                }
+            break;
         }
     }
 ?>
