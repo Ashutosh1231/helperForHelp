@@ -6367,6 +6367,23 @@ footer .line-shape {
   background-color: #2E2E2E;
 }
 
+#address .nice-select{
+  width: 100%;
+  float: none;
+}
+
+#address .nice-select .list{
+  width: 100%;
+}
+
+#address .nice-select .option{
+  width: 100%;
+}
+
+#city .login-form form label{
+  margin-bottom: 5px;
+}
+
 .terms-forgot {
   display: flex;
   justify-content: space-between;
@@ -9301,4 +9318,71 @@ footer .line-shape {
   color: #696969;
   line-height: 28px;
 }
+
+#servicecityvariableoptions {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: #DAEBDC 0px 0px 3px 0px;
+  width: 70%;
+  position: relative;
+  left: 15%;
+}
+
+#servicecityvariableoptions p {
+  font-weight: 600;
+  color: #000000;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+#servicecityvariableoptions label {
+  margin-right: 5px;
+  margin-bottom: 15px;
+  box-shadow: #ce1567 0px 0px 2px 0px;
+  border-radius: 15px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  align-items: center;  
+  font-weight: 400;
+  font-size: 16px;
+  width: fit-content;
+  cursor: pointer;
+}
+
+#servicecityvariableoptions span {
+  font-weight: 600;
+  color: #000000;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.apxvalue {
+  font-weight: 600;
+  color: #000000;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.norad input[type=radio] {
+  display: none;
+}
+
+.norad input[type=radio]:checked + label.radio {
+  background-color: #ce1567;
+  color: #FFFFFF;
+}
+
+.norad input[type=radio] + label.radio {
+  font-size: 1rem;
+  color: #333;
+  padding: 8px;
+  width: 100%;
+  margin: 0;
+}
+
+
+
+
 /*# sourceMappingURL=style.css.map */

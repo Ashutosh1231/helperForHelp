@@ -38,6 +38,7 @@
             </li>
             
             <li><a href="contact.php">Contact Us</a></li>
+            <li><a href="login.php">Login</a></li>
         </ul>
         <div class="my-account">
             <a href="account.php">My Account</a>

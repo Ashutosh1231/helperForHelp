@@ -76,13 +76,13 @@
                             $sgooptionsresult = $sgooptions->fetchBySgoIdAndStatus($data['id'],1);
                             if($sgooptionsresult['status'] == 'success'){
                                 ?>
-                                <div>
+                                <div class="norad">
                                     <p><?=$data['name'];?></p>
                                     <?php
                                         foreach($sgooptionsresult['data'] as $optionsdata){
                                             ?>
-                                            <input type="radio" id="servicevariable<?=$optionsdata['id'];?>" name="servicevariable<?=$variablecounter;?>" value="<?=$optionsdata['id'];?>" class="voptions" />
-                                            <label for="servicevariable<?=$optionsdata['id'];?>"><?=$optionsdata['name'];?></label>        
+                                            <input type="radio" id="servicevariable<?=$optionsdata['id'];?>" name="servicevariable<?=$variablecounter;?>" value="<?=$optionsdata['id'];?>" />
+                                            <label class="radio" for="servicevariable<?=$optionsdata['id'];?>"><?=$optionsdata['name'];?></label>        
                                             <?php                                        
                                         }
                                     ?>
@@ -93,7 +93,7 @@
                             
                         }
                         ?>
-                        <div class="">Approximate Value = <span class="appvalue"><?=$base_price;?></span></div>
+                        <div class="apxvalue">Approximate Value ~ ₹<span class="appvalue"><?=$base_price;?></span></div>
                     </form>
                     <?php
                     

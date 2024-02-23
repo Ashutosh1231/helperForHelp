@@ -52,7 +52,7 @@
                             </div>
                             <div class="desc">
                                 <h4>Location</h4>
-                                <p>168/170, Ave 01, York Drive Rich Mirpur, Dhaka-1216</p>
+                                <p>Varanasi, India</p>
                             </div>
                         </div>
                     </div>
