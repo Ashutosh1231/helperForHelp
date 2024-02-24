@@ -759,7 +759,7 @@ video {
 .breadcrumbs {
   position: relative;
   min-height: 450px;
-  background-image: url(../images/breadcrumbs-bg.png);
+  background-image: url(../images/breadcrumb_bg.jpg);
   background-size: cover;
   background-position: center center;
   z-index: 1;
