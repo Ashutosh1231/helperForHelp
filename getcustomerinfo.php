@@ -81,7 +81,7 @@
                                     <?php
                                         foreach($sgooptionsresult['data'] as $optionsdata){
                                             ?>
-                                            <input type="radio" id="servicevariable<?=$optionsdata['id'];?>" name="servicevariable<?=$variablecounter;?>" value="<?=$optionsdata['id'];?>" />
+                                            <input type="radio" id="servicevariable<?=$optionsdata['id'];?>" name="servicevariable<?=$variablecounter;?>" value="<?=$optionsdata['id'];?>" class="voptions"/>
                                             <label class="radio" for="servicevariable<?=$optionsdata['id'];?>"><?=$optionsdata['name'];?></label>        
                                             <?php                                        
                                         }
