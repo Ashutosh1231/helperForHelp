@@ -81,7 +81,7 @@
                                     <?php
                                         foreach($sgooptionsresult['data'] as $optionsdata){
                                             ?>
-                                            <input type="radio" id="servicevariable<?=$optionsdata['id'];?>" name="servicevariable<?=$variablecounter;?>" value="<?=$optionsdata['id'];?>" />
+                                            <input type="radio" class="voptions" id="servicevariable<?=$optionsdata['id'];?>" name="servicevariable<?=$variablecounter;?>" value="<?=$optionsdata['id'];?>" />
                                             <label class="radio" for="servicevariable<?=$optionsdata['id'];?>"><?=$optionsdata['name'];?></label>        
                                             <?php                                        
                                         }
@@ -90,7 +90,7 @@
                                 </div>
                                 <?php    
                             }
-                            
+                            //#73274d
                         }
                         ?>
                         <div class="apxvalue">Approximate Value ~ ₹<span class="appvalue"><?=$base_price;?></span></div>
