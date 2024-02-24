@@ -41,7 +41,7 @@
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>SERVE - On Demand Services HTML Template</title>
+        <title>Helper For Hire</title>
         <?php
             include_once('assets/scripts/header_links.php');
         ?>
@@ -94,6 +94,7 @@
                         }
                         ?>
                         <div class="apxvalue">Approximate Value ~ ₹<span class="appvalue"><?=$base_price;?></span></div>
+                        <input class="btn" type="submit" value="Continue" style="background-color: #ce1567; color: white; "/>
                     </form>
                     <?php
                     
